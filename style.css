@@ -1,0 +1,366 @@
+/* =========================
+   BASE
+========================= */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    background-color: #ffffff;
+}
+
+section, div[id] {
+    scroll-margin-top: 90px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #2c3e50, transparent);
+    margin: 60px 0;
+}
+
+/* =========================
+   HEADER / NAV
+========================= */
+
+header {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #cbcdcf;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+    color: #2c3e50;
+}
+
+/* =========================
+   LAYOUT HERO
+========================= */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1200px;
+    margin: 100px auto 0 auto;
+    padding: 0 30px;
+
+    gap: 40px;
+}
+
+/* Colonnes */
+.hero-left {
+    flex: 2;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* =========================
+   TITRE / PRESENTATION
+========================= */
+
+.presentation {
+    position: relative;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.presentation::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    height: 4px;
+    background: linear-gradient(to right, #1abc9c, #2c3e50);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.hero-right img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* =========================
+   A PROPOS
+========================= */
+
+.apropos {
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.apropos a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px 50px;
+    background-color: #2c3e50;
+    color: #cbcdcf;
+
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.apropos a:hover {
+    background-color: #e0e0e0;
+    color: #2c3e50;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact li {
+    margin-bottom: 15px;
+}
+
+/* Ligne LinkedIn et GitHub */
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px; /* ou 250px */
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   PROFIL DATA
+========================= */
+
+#profil-data {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 30px;
+}
+
+#profil-data h2 {
+    text-align: center;
+}
+
+.profil-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.profil-grid .bloc {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background-color: #f6f9fc;
+    border-radius: 10px;
+}
+
+.profil-data-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+ .profil-data-cta a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #2c3e50;
+    color: #cbcdcf;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.profil-data-cta a:hover {
+    background-color: #e0e0e0;
+    color: #2c3e50;
+}
+
+
+#projets {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 30px;
+}
+
+.titre {
+    font-weight: bold;
+}
+
+#projets h2, h3 {
+    text-align: center;
+}
+
+.projets-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projet {
+    width: 300px;
+    text-align: center;
+}
+
+#projets h2 {
+    margin-top: 100px;
+}
+
+#projets h3 {
+    font-weight: normal;
+    padding: 0px 200px;
+}
+
+.projet img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.projet img:hover {
+    transform: scale(1.03);
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* important si petit écran */
+    justify-content: center;
+}
+
+.skills span {
+    background-color: #9aa4c2;
+    color: #0c0c0c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#aeroworld {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 30px;
+
+}
+
+.livrables {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; /* important si petit écran */
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.livrables a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #2c3e50;
+    color: #cbcdcf;
+    border-radius: 5px;
+    transition: 0.3s;
+    padding: 15px 30px;
+}
+
+
+
+.livrables a:hover {
+    background-color: #e0e0e0;
+    color: #2c3e50;
+    
+}
+
+
+#autres-projets {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 30px;
+}
+
+.table-projets {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+.table-projets th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 14px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.table-projets td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.table-projets tr:hover {
+    background-color: #f6f9fc;
+}
+
+
+#aeroworld h2 {
+    text-align: center;
+}
